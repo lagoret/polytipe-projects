@@ -39,11 +39,24 @@
 
 <body unresolved class="fullbleed">
   <paper-drawer-panel id="drawer_panel" disable-swipe force-narrow>
-    <paper-header-panel drawer mode="seamed">
-      <div id="drawer_content"></div>
+    <paper-header-panel drawer="" mode="seamed" at-top="">
+      <div id="drawer_content" style="border: none;"></div>
     </paper-header-panel>
-    <paper-header-panel main mode="seamed">
-      <iron-pages id="app_content" attr-for-selected="id"></iron-pages>
+    <paper-header-panel main="" mode="seamed" at-top="">
+      <iron-pages id="app_content" attr-for-selected="id">
+        <section id="pantalla1">
+          <poly-label text="Un texto inicial" size="paper-font-subhead" link="pantalla1" id="poly1"></poly-label>
+          <poly-button text="Botón" icon="icons:card-membership" link="" id="poly3" raised="" style="background-color: rgb(255, 193, 7);"></poly-button>
+          <poly-label text="Texto" size="paper-font-subhead" link="" id="poly2"></poly-label>
+          <poly-checkbox text="Ítem" link="" id="poly4" checked=""></poly-checkbox>
+          <poly-layout id="poly5">
+            <poly-label text="Texto" size="paper-font-subhead" link="" id="poly6"></poly-label>
+          </poly-layout>
+          <poly-layout id="poly8" align="end">
+            <poly-button text="Botón" icon="" raised="" link="" id="poly9"></poly-button>
+          </poly-layout>
+        </section>
+      </iron-pages>
     </paper-header-panel>
   </paper-drawer-panel>
 
